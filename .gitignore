@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Environment files (never commit real secrets)
+.env
+.env.local
+.env.*.local
+backend/.env
+frontend/.env
+frontend/.env.local
+!.env.example
+
+# Build output
+frontend/dist/
+frontend/.vite/
+backend/coverage/
+
+# Test artifacts
+coverage/
+.nyc_output/
+backend/tests/.mongo-cache/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# Miscellaneous
+*.pem
+.cache/

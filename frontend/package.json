@@ -1,0 +1,29 @@
+{
+  "name": "luma-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LUMA e-commerce storefront and admin dashboard",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5173",
+    "build": "vite build",
+    "preview": "vite preview --port 4173"
+  },
+  "dependencies": {
+    "axios": "^1.21.0",
+    "lucide-react": "^1.63.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^6.30.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.2.0",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.19",
+    "vite": "^7.3.7"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}

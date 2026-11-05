@@ -1,0 +1,26 @@
+{
+  "name": "luma-ecommerce",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LUMA — a production-ready MERN e-commerce application",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "start": "concurrently -k -n API,WEB -c blue,magenta \"npm run dev --workspace backend\" \"npm run dev --workspace frontend\"",
+    "dev": "npm start",
+    "build": "npm run build --workspace frontend",
+    "seed": "npm run seed --workspace backend",
+    "seed:destroy": "npm run seed:destroy --workspace backend",
+    "test": "npm run test --workspace backend",
+    "start:prod": "npm run build && cross-env NODE_ENV=production npm run start --workspace backend"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6",
+    "cross-env": "^10.1.0"
+  }
+}
